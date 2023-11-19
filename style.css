@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  font-family: "Ano", sans-serif;
+  background-color: #14433D;
+  color: #FFEEDF;
+  text-align: center;
+  padding-top: 1em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav {
+  margin-top: 1.5em;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  height: 3em;
+}
+.innav input {
+  background-color: #14433D;
+  color: white;
+  border-radius: 15px;
+  padding: 0.5em;
+  width: 8em;
+  font-weight: bolder;
+}
+.innav > a,
+.innav > i,
+.innav > img {
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 auto;
+  color: #14433D;
+  font-weight: bold;
+}
+.innav > a,
+.innav > i,
+.innav >img:hover {
+  cursor: pointer;
+}
+.innav img {
+  padding: 0%;
+}
+
+body {
+  background-color: aqua;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 6.5em;
+  font-family: "Ano", sans-serif;
+}
+.section1 {
+  padding-top: 15%;
+  padding-bottom:10%;
+  padding-left: 7%;
+  background:url("https://drinkolipop.com/cdn/shop/files/Home_Banner_Desktop_2x_97d4c8c8-ed60-4fcf-ba2f-32ebacc5b379_2880x.png?v=1683220323")no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  color: #028001;
+  display:flex;
+  align-items: start;
+  height: 100%;
+}
+.section1 .part1>h1{
+  margin: 0.5em; 
+}
+.part1 > h1 ,.part1>img {
+  letter-spacing: 5px;
+  font-family: "Fraunces", serif;
+  font-weight: bolder;
+  font-size: 4em;
+   
+}
+
+.part1 > button {
+  background-color: green;
+  color: white;
+  padding: 1em;
+  border-radius: 20px;
+  margin: 1em; 
+  width: 15em;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+}
+.part1 button:hover {
+  background-color: black;
+}
+ .section2{
+    background:url("https://drinkolipop.com/cdn/shop/files/CA_Tablet_091223_1153x.png?v=1694614580")no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    color: #FFEEDF;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+} 
+
+.section3 {
+  background:url("https://drinkolipop.com/cdn/shop/files/GA_Desktop_V3.4_1440x.png?v=1695421477")no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  color: #D8E598;
+  display: flex;
+  justify-content: space-evenly;
+  align-items:center;
+  padding-bottom: 10%;
+  padding-top: 5%;
+  
+}
+.section3 button{
+  background-color: #14433D;
+
+}
+
+.section4{
+  background-color: #FFF7E5;
+  color: #14433D;
+}
+.section4 button{
+  background-color: #14433D;
+
+}
+
+.part1>h2{
+  font-family: "Fraunces", serif;
+  padding:2%;
+  font-size: 52px;
+}
+.wrapper .carousel::-webkit-scrollbar{
+  display: none;
+}
+.wrapper{
+  max-width: 1600px;
+  width: 100%;
+   position:relative; 
+  
+}
+.wrapper .carousel{
+  padding-top: 3%;
+  padding-left: 1%;
+  max-width: 1470px;
+  height:500px;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 5) -12px);
+  gap:45px;
+  overflow-x: scroll;
+  scroll-behavior: smooth; 
+}
+
+.wrapper >i{
+  height:50px;
+  width:50px;
+  background-color: #FFF7E5;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+.wrapper i:first-child{
+  left: 5px;
+}
+
+.wrapper i:last-child{
+  right: 5px;
+}
+.carousel .card{
+  list-style: none;
+  background: #FFF7E5;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.card>img{
+  height:480px;
+  width: auto;
+  object-fit: cover;
+  cursor: pointer;
+
+}
+@media screen and (max-width: 900px){
+  .wrapper .carousel{
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+  
+}
+@media screen and (max-width: 600px){
+  .wrapper .carousel{
+    grid-auto-columns: 100%;
+  }
+  
+}
+/* .card .img{
+  height:min-content;
+  object-fit: cover;
+} */
+
+.section5{
+  background-color: #FBDEC0;  
+  background-position: 100%;
+  color: #14433D;
+  display:flex;
+  align-items:center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.section5 .part1 h1{
+  letter-spacing: 1px;
+  font-family: "Fraunces", serif;
+  font-weight: bolder;
+  font-size: 4em;
+  text-align: start; 
+
+}
+.section5 .part1 p{
+  margin: 20px;
+}
+.section5 button{
+    background-color: #14433D;
+    margin: 20pxs;
+  
+}
+
+.section6{
+  background: url("https://drinkolipop.com/cdn/shop/files/29.07_2_2304x.jpg?v=1657566130")no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenlys;
+
+}
+
+.section6 h3{
+  font-family: "Fraunces", serif;
+  font-weight: bolder;
+  font-size: 3em;
+  color: #FFF7E5;
+  padding: 5%;
+  padding-right: 20%;
+  padding-left: 20%;
+
+}
+
+.section6 p{
+  padding-top: 11em;
+  color: #FFF7E5;
+  font-family: "Ano", sans-serif;
+  font-weight: bolder;
+}
+
+.list p{
+  padding: 0%;
+  margin-left: 5em;
+  padding-bottom: 11em;
+}
+.list{
+  list-style: none;
+  display: flex;
+
+}
+.section7{
+  background-color: #FFF7E5;
+  color: #14433D;
+}
+.section7 .part2{
+  display: flex;
+  column-gap: 3%;
+  align-items: center;
+   padding: 0 25%; 
+}
+.section7 img{
+  border-radius: 20%;
+  width: 350px;
+  height: 350px;
+  padding-left: 5%;
+  cursor: pointer;
+}
+.section7 h3{
+  font-family: "Fraunces", serif;
+  font-weight: bolder;
+  font-size: 3em;
+  color: #14433D;
+  padding: 5%;
+  padding-bottom: 1%;
+  padding-right: 20%;
+  padding-left: 20%;
+
+}
+.section7 p{
+  padding-bottom: 5%;
+  padding-right: 35%;
+  padding-left: 35%;
+}
+.section7 button{
+  color: #FFF7E5;
+  background-color: #14433D;
+  padding: 1em;
+  border-radius: 20px;
+  margin: 1em; 
+  width: 15em;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #14433D; /* Background color in 14433D */
+  color: #fff; /* Text color */
+  padding: 20px;
+  text-align: center;
+}
